@@ -1,0 +1,115 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    background-color: #E6E7EA;
+}
+.dashboard-bg-container{
+    width:100%;
+    max-width: 1400px;
+    margin:0px auto;
+    padding: 0px 10px;
+}
+.dahs-cards-container{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.dash-main-heading{
+    font-size: 34px;
+    color: #ff7a00;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.dsha-card-container{
+    width:400px;
+    background-color: white;
+    border-radius: 10px;
+    padding:15px;
+    max-height:500px;
+
+}
+
+.card-answer{
+    max-height: 300px;
+    overflow: auto;
+}
+.card-question{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.card-answer{
+    /* height: 100px; */
+    font-size: 12px;  
+    color: #8d8d8d;
+    /* overflow: hidden;   */
+}
+.card-line{
+    margin:20px 0px;
+    border-radius: 10px;
+}
+.react-icon{
+    font-size: 25px;
+    cursor: pointer;
+    color: gray;
+
+}
+.like_reaction{
+    margin-right: 5px;
+}
+.home-icon{
+  font-size: 32px;
+  cursor: pointer;
+}
+.heading-btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dom-link{
+    color: black;
+}
+.home-icon-link{
+    color:black
+}
+.success_view{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.loading_view{
+    width:100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.like-dislike-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.download-icon{
+    font-size: 25px;
+    cursor: pointer;
+    color: gray; 
+}
+.success_view{
+    width:100%;
+    /* padding:10px; */
+}
+.no_card_view{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

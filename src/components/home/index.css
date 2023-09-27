@@ -1,0 +1,190 @@
+  @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Lato&family=Poppins&family=Varela+Round&display=swap');
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    background-color: #E6E7EA;
+}
+
+.home-bg-container{
+    width:100%;
+    max-width: 1200px;
+    margin:0px auto;
+    padding: 0px 10px;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.dom-link{
+    color: black;
+   
+}
+.story_container{
+  /* height: */
+}
+
+
+/* ________________________________________bottom_section_styling________________________________________ */
+
+.bottom_section{
+     /* max-width: 1200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* width:fit-content; */
+    bottom: 5px;
+    left: 0px;
+    right:0px;
+    /* margin:0px auto; */
+   
+    padding: 0px 10px;
+    /* align-self: flex-end; */
+    }
+    .story_container{
+        overflow: auto;
+        max-height: 70vh;
+        /* background-color: white; */
+        /* padding: 10px; */
+        border-radius: 5px;
+        position:relative;
+    }
+    .tex-download{
+        position: absolute;
+        right: 0px;
+        /* margin-top: 50px; */
+        /* bottom: 0px; */
+    }
+    .story_container::-webkit-scrollbar {
+        width: 5px;
+      }
+       
+      .story_container::-webkit-scrollbar-track {
+        /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+      }
+       
+      .story_container::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        /* outline: 1px solid slategrey; */
+        border-radius: 10px;
+      }
+
+
+.question{
+   resize: none;
+   outline: none;
+   border:none;
+   border-radius: 5px;
+   height:86px;
+   width:900px;
+   padding:5px;
+   margin-right: 5px;
+}
+.btns{
+    height:40px;
+    width:150px;
+    border: 1px solid #ff7a00;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+.dsahboard-btn{
+    width: 305px;
+}
+.run-save-container{
+    margin-bottom: 5px;
+}
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+}
+.run-save-container{
+    display:flex;
+    justify-content: center;
+}
+.run-btn{
+    margin-right: 5px;
+}
+
+/* blink */
+
+
+  
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+  
+.blink::after {
+    content: "";
+    width: 3px;
+    height: 30px;
+    background: black;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+  }
+  
+
+
+
+@media(max-width:800px){
+    .btns{
+        height:40px;
+        width:100px;
+    }
+    .dsahboard-btn{
+        width:204px;
+    }
+}
+
+@media(max-width:580px){
+    .btns{
+        height:40px;
+        width:48px;
+    }
+    .dsahboard-btn{
+        width:102px;
+    }
+}
+
+@media(max-width:450px){
+    .btns{
+        height:40px;
+        width:50%;
+    }
+    .dsahboard-btn{
+        width:160px;
+    }
+    .bottom_section{
+    flex-direction: column;
+    /* width */
+    }
+    .buttons-container{
+        width: 100%;
+    }
+    .dsahboard-btn{
+        width:100%;
+        height:40px;
+    }
+
+    .question{
+   width: 100%;
+    }
+    .story_container{
+        max-height: 70vh;
+    }
+    .home-bg-container{
+      justify-content: flex-start;
+    }
+
+}
