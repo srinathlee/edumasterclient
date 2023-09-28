@@ -78,7 +78,7 @@ const Dashboard=()=>{
 const DeleteCard=async(_id)=>{
 
     setState("loading")
-    const response=await axios.delete(`http://localhost:5080/getall/${_id}`)
+    const response=await axios.delete(`https://edumasterserver.onrender.com/getall/${_id}`)
     console.log(response)
     if(response.status===201){
         setState("success",getData())
@@ -87,7 +87,7 @@ const DeleteCard=async(_id)=>{
 
     const getData=async()=>{
         setState("loading")
-        const response=await axios(`http://localhost:5080/getall`)
+        const response=await axios(`https://edumasterserver.onrender.com/getall`)
         console.log(response)
         if(response.status===201){
             setState("success")
