@@ -180,9 +180,9 @@ body{
     .question{
    width: 100%;
     }
-    .story_container{
+    /* .story_container{
         max-height: 60vh;
-    }
+    } */
     .home-bg-container{
       justify-content: flex-start;
     }
