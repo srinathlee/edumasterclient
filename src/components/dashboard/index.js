@@ -15,7 +15,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios"
 import TextDownloader from '../textdownload/textdownload.js'
 
-axios.defaults.baseURL="http://localhost:5080/"
+axios.defaults.baseURL="https://edumasterserver.onrender.com"
 
 
 
@@ -80,7 +80,7 @@ const Dashboard=()=>{
 const DeleteCard=async(_id)=>{
 
     setState("loading")
-    const response=await axios.delete(`getall/${_id}`)
+    const response=await axios.delete(`/getall/${_id}`)
     console.log(response)
     if(response.status===201){
         setState("success",getData())

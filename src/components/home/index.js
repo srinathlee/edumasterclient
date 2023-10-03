@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import SlowTextRender from '../slowtext/slowtext.js'
 import 'react-toastify/dist/ReactToastify.css';
 // ___________________________setting axios baseurl ___________________________________________
-axios.defaults.baseURL="http://localhost:5080/"
+axios.defaults.baseURL="https://edumasterserver.onrender.com"
 
 
 
@@ -21,7 +21,7 @@ const Home=()=>{
             event.preventDefault()
             setblink(true)
             if(question!=="" && answer===""){
-            const response=await axios.post("getStory",{question:question})
+            const response=await axios.post("/getStory",{question:question})
             console.log(response)
             if(response.status===200){
                 setAnswer(response.data.story)
@@ -35,7 +35,7 @@ const Home=()=>{
         const SaveStory=async(event)=>{
             event.preventDefault()
             if(answer!==""){
-            const response=await axios.post("http://localhost:5080/save",{question:question, story:answer})
+            const response=await axios.post("/save",{question:question, story:answer})
             console.log(response)
             if(response.status===200){
                 toast.success("saved successfully")
