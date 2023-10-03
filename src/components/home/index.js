@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import SlowTextRender from '../slowtext/slowtext.js'
 import 'react-toastify/dist/ReactToastify.css';
 // ___________________________setting axios baseurl ___________________________________________
-axios.defaults.baseURL="https://edumasterserver.onrender.com"
+// axios.defaults.baseURL="https://edumasterserver.onrender.com"
 
 
 
