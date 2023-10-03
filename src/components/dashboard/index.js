@@ -89,7 +89,7 @@ const DeleteCard=async(_id)=>{
 
     const getData=async()=>{
         setState("loading")
-        const response=await axios(`/getall`)
+        const response=await axios.get(`/getall`)
         console.log(response)
         if(response.status===201){
             setState("success")
