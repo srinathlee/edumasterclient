@@ -155,6 +155,9 @@ body{
     .dsahboard-btn{
         width:102px;
     }
+    .home-bg-container{
+     height: 92vh;
+    }
 }
 
 @media(max-width:450px){

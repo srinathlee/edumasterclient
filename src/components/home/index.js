@@ -9,6 +9,8 @@ import SlowTextRender from '../slowtext/slowtext.js'
 import 'react-toastify/dist/ReactToastify.css';
 // ___________________________setting axios baseurl ___________________________________________
 // axios.defaults.baseURL="https://edumasterserver.onrender.com"
+// axios.defaults.baseURL="http://localhost:5080"
+
 
 
 
@@ -54,8 +56,7 @@ const Home=()=>{
     return(
         <div className="home-bg-container">
             <ToastContainer/>
-            {/* Send more information to customers without the restriction of 160 characters. Create long messages that appear as a single SMS of up to 5,000 characters.ong messages give you the opportunity to promote more products and services or provide further information to your audience.You can avoid text speak and use natural language to communicate more clearly.Your long messages will be concatenated, ensuring that a  */}
-                {answer && <TextDownloader answer={answer}/>}
+           {answer && <TextDownloader answer={answer}/>}
             <div className="story_container">
                
                 {

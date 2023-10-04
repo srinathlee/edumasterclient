@@ -16,6 +16,7 @@ import axios from "axios"
 import TextDownloader from '../textdownload/textdownload.js'
 
 axios.defaults.baseURL="https://edumasterserver.onrender.com"
+// axios.defaults.baseURL="http://localhost:5080"
 
 
 
@@ -89,7 +90,7 @@ const DeleteCard=async(_id)=>{
 
     const getData=async()=>{
         setState("loading")
-        const response=await axios.get(`/getall`)
+        const response=await axios.get("/getall")
         console.log(response)
         if(response.status===201){
             setState("success")
